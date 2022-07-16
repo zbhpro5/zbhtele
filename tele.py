@@ -71,7 +71,7 @@ if os.path.isfile('multi_log.txt'):
                 print(r+ " Now deleting files related to last session")
                 Sleep(1)
                 for d in range(v-1):
-                    os.remove("JohnMilton{}.session".format(d))
+                    os.remove("zbhpro5{}.session".format(d))
                 os.remove('multi_log.txt')          
             ospath()
         else:
@@ -92,7 +92,7 @@ for s in range(v):
     api_hash = data[t+1]
     print(a+ ' \nTrying... to connect to the Account {} \n'.format(x+1)+y+ ' \n api {}= '.format(x+1) +m+ api_id +'\n' +y+ ' api hash {} = '.format(x+1) +m+ api_hash)
     Sleep(1)
-    client = TelegramClient("JohnMilton{}".format(x), api_id, api_hash)
+    client = TelegramClient("zbhpro5{}".format(x), api_id, api_hash)
     client.start()
     name=utils.get_display_name(client.get_me())
     print(a+" \n\n  ❤Successfully connected as {}❤\n\n".format(name))
